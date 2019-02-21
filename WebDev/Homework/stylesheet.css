@@ -1,0 +1,56 @@
+
+/* This will change properties for the entire body*/
+body {
+   margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: body;
+    animation-duration: .5s;
+}
+/*Style of all h1,h2,h3 elements*/
+.heading{
+    color: #2980b9;
+}
+/*Main content style*/
+.content {
+    border: 1px solid #000;
+    width: 75%;
+    padding: 3px;
+    float: left;
+    margin-right: 15px;
+}
+/*Style of the paragraphs in the main content*/
+.content p {
+    margin: 10px;
+}
+/*Style of the side image */
+#sidebar {
+    float: left;
+    width: 250px;
+    height: 345px;
+    background: url(escargot.jpg)
+}
+
+
+@keyframes body {
+    0% {
+        display: none;
+        opacity: 0;
+        background: black;
+        color: black;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+        background: black;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+
+

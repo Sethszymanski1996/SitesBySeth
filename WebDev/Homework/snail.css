@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.637)), url(https://gatherjournal.com/wp-content/uploads/2016/11/GJ_W17_ISSUE_single_31.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: hero;
+    animation-duration: 3s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 200px;
+    transition-duration: 500ms;
+}
+
+.btn-main {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+}
+.btn-main:hover {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #1d5a81;
+    border: 1px solid #1d5a81;
+}
+
+.btn-secondary {
+    border: 1px solid #2980b9;
+    color: #2980b9;
+}
+.btn-secondary:hover {
+    border: 1px solid #2980b9;
+    background-color: #236d9d;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    word-spacing: 2px;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 100%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px; 
+}
+
+
+
+@keyframes hero {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}

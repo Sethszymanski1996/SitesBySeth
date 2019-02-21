@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+[class*="col-"] {
+  padding: 1rem;
+}
+
+.navbar {
+  padding: .7rem 1rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  transition: background-color .5s ease 0s;
+  background: rgb(242, 245, 248)!important;
+}
+.navbar-brand img {
+  height: 4rem;
+}
+.svg-inline--fa.fa-w-14 {
+  color: #FA9838;
+  font-size: 1.6rem;
+}
+.navbar-nav li {
+  padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+  color: #FA9838;
+  padding-top: .8rem;
+  font-size: 1.1rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #0278B4;
+}
+.navbar.solid{
+  background: rgb(242, 245, 248)!important;
+  transition: background-color 1s ease 0s;
+}
+
+
+.dropdown-menu, .dropdown-item {
+  font-size: .9rem;
+  font-weight: 700!important;
+  background-color: rgb(242, 245, 248)!important;
+  border: 0;
+  color: #FA9838;
+}
+.dropdown-menu.show {
+  margin-top: .75rem!important;
+  border-radius: 0;
+  transition: background-color .5s ease 0s;
+}
+.dropdown-submenu {
+  transition: background-color .5s ease 0s;
+}
+.dropdown-menu.no-space-top {
+  margin-top: 0!important;
+}
+.dropdown-menu:hover, .dropdown-item:hover,
+.dropdown-menu:focus, .dropdown-item:focus,
+.dropdown-toggle:active, .dropdown-toggle:focus {
+  color: #0278B4!important;
+  display: block;
+}
+.dropdown-submenu.solid, .dropdown-menu.show.solid {
+  background: rgba( 255, 255, 255, .85) !important;
+  transition: background-color 1s ease 0s;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 18.75rem;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #1A1A1A;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease,-webkit-transform 1.2s ease;
+
+}
+.carousel-caption {
+  min-width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  padding: 0;
+}
+.carousel-item h1 {
+  color: white;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.carousel-item h5 {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: .3rem .3rem .4rem black;
+  padding-bottom: 2rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 200px;
+  padding: .8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block!important;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-lg:hover {
+  background-color: rgba(53, 53, 53, 0.637);
+  color: #FA9838;
+  border: 1px solid #FA9838;
+}
+
+footer {
+  background: rgb(242, 245, 248);
+  background-size: cover;
+  background-position: center;
+  color: rgb(44, 44, 44);
+  margin-top: -3;
+  overflow-x: hidden;
+}
+footer .row {
+  padding: 1rem 2rem 3rem;
+}
+footer img {
+  height: 90%;
+  
+}
+footer a {
+  color: blue;
+}
+
+footer a:hover{
+  color: orange;
+}
+
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+}
+footer svg.svg-inline--fa:hover {
+  color: #1ebba3!important;
+}
+footer h3 {
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+.mobile-logo{
+  display: none;
+}
+.mobile-copy{
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .carousel-item h1 {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    padding-bottom: .8rem;
+  }
+  .carousel-item h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1.7rem;
+  }
+  .btn-lg {
+    padding: .7rem 1.2rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 2.1rem;
+  }
+
+  .mobile-logo{
+    display: inline-block;
+    height: 30%;
+    padding-top: -10px;
+  }
+  .copy{
+    display: none;
+  }
+
+  .mobile-copy{
+    display: inline-block;
+  }
+
+  footer img {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .carousel-item h1 {
+    font-size: 2.7rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .carousel-item h3 {
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: .6rem 1.1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.8rem;
+  }
+  #fixed {
+    background-image: url('img/fixed/apple-mobile.png');
+  }
+  #fixed-2 {
+    background-image: url('img/fixed/office-mobile.png');
+  }
+  footer img {
+    height: 50%;
+    margin: 1.5rem 0;
+  }
+  .top-scroll {
+    display: none!important;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .carousel-item.active h1 {
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+    padding-bottom: .4rem;
+  }
+  .carousel-item.active h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .btn-lg {
+    padding: .4rem .9rem;
+    font-size: .9rem;
+  }
+  .narrow {
+    width: 85%;
+  }
+}
+
+
+
